@@ -1,4 +1,4 @@
-name: jlite-kernels
+name: jlite-kernels-deploy
 channels:
   - https://repo.prefix.dev/emscripten-forge-dev
   - conda-forge
