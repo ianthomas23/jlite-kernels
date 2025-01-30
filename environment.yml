@@ -7,4 +7,4 @@ dependencies:
   #- xeus-lua
   - xeus-python
   - ipympl
-  - matplotlib
+  - matplotlib>=3.10.0
