@@ -8,3 +8,14 @@ micromamba activate jlite-kernels
 jupyter lite build --contents contents --output-dir dist
 npx static-handler dist/
 ```
+
+Running without cross-origin headers (using `npx static-handler dist/`) will use the
+service worker for `stdin` requests. This can be confirmed from the Network tab in the
+browser's dev tools which will show an `xhr` request to `/api/stdin/kernel` for each
+`stdin` request.
+
+Alternatively use SharedArrayBuffer for `stdin` requests by serving with
+```
+npx static-handler --cors --coop --coep --corp dist/
+```
+and there will be no `xhr` requests in the Network tab.
