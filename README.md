@@ -1,4 +1,4 @@
-Example JupyterLite deployment with kernels.
+Example JupyterLite deployment with `pyodide` and `xeus-cpp`, `xeus-python` and `xeus-r` kernels.
 
 To deploy locally:
 
@@ -15,7 +15,7 @@ browser's dev tools which will show an `xhr` request to `/api/stdin/kernel` for 
 `stdin` request.
 
 Alternatively use SharedArrayBuffer for `stdin` requests by serving with
-```
+```bash
 npx static-handler --cors --coop --coep --corp dist/
 ```
 and there will be no `xhr` requests in the Network tab.
