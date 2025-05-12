@@ -1,5 +1,7 @@
 Example JupyterLite deployment with `pyodide` and `xeus-cpp`, `xeus-python` and `xeus-r` kernels.
 
+Deployment available on github pages at https://ianthomas23.github.io/jlite-kernels.
+
 To deploy locally:
 
 ```bash
